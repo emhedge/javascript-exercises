@@ -8,18 +8,6 @@ const removeFromArray = function(array, ...args) {
         }
     }); return newArray;
     
-    // let removedItems = Array.from(args);
-    
-    // for (i = 0; i < array.length; i++){
-    //     if (removedItems === array[i]) {
-    //         array.slice(args[i - 1], 1);
-    //         return newArray;
-    //     }  else continue;
-        
-    // }
-    
-    
-    
 };
 
 removeFromArray([1, 2, 3, 4], 3)
