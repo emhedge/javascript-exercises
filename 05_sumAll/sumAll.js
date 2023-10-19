@@ -4,9 +4,7 @@ const sumAll = function(first, second) {
     let args = [first, second];
     args.sort(function(a, b){return a - b});
     
-    if ((Math.sign(first) < 0) || (Math.sign(second) < 0)) {
-        return "ERROR"
-    } 
+    if ((first < 0) || (second < 0)) return "ERROR";
 
     if (((typeof(first) === "string")) || ((typeof(second) === "string"))) {
         return "ERROR"
