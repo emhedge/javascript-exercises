@@ -1,6 +1,6 @@
 const sumAll = function(first, second) {
 
-    let finalSum = Number('');
+    let finalSum = 0;
     let args = [first, second];
     args.sort(function(a, b){return a - b});
     
@@ -17,9 +17,9 @@ const sumAll = function(first, second) {
     }
 
     
-    let i = args[0];
+    let i = first;
 
-    while (i <= args[1] && i  ) {
+    while (i <= second) {
         finalSum += i;
         i++
 }; return finalSum;
