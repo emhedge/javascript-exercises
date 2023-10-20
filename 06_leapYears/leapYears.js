@@ -1,8 +1,7 @@
 const leapYears = function(givenYear) {
-    if (givenYear % 400 == 0) return true;
-    else if (((givenYear % 4) == 0) && ((givenYear % 100) == 0)) return false;
-    else if ((givenYear % 4) == !0) return false;
-    else if (givenYear % 4 == 0) return true;
+    // returns true if first and either part of second condition are met;
+    // returns false otherwise
+    return givenYear % 4 === 0 && (givenYear % 100 !== 0 || givenYear % 400 === 0); 
 };
 
 leapYears(700);
